@@ -1,9 +1,9 @@
 #include "includes/Relation.h"
 
-string Relation::getRelationType()
+std::string Relation::getRelationType()
 {
-    if(_type == RelationType.AMITIE) return "Amitie";
-    else if (_type == RelationType.CONNAISSANCE) return "Connaissance";
-    else if (_type == RelationType.TRAVAIL) return "Travail";
+    if(_type == AMITIE) 			return "Amitie\n";
+    else if (_type == CONNAISSANCE) return "Connaissance\n";
+    else if (_type == TRAVAIL) 		return "Travail\n";
     else return "Autres";
 }

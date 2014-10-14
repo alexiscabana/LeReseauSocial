@@ -8,3 +8,9 @@ Date::Date()
     _month = now->tm_mon+1;
     _day = now->tm_mday;
 }
+
+Date::operator<<(std::ostream&, const Date&)
+{
+	
+	
+}

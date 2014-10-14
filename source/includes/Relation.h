@@ -2,19 +2,18 @@
 #define RELATION_H
 
 #include "Date.h"
-
-using namespace std;
+#include <string>
 
 class Relation
 {
     public:
-        Relation();
         enum RelationType {AMITIE, CONNAISSANCE, TRAVAIL, NB_REL};
-        string getRelationType();
+        Relation(RelationType type=CONNAISSANCE):_type(type){};
+        std::string getRelationType();
 
     private:
         RelationType _type;
-        Date startingDate;
+        Date _startingDate;
 };
 
 #endif
