@@ -3,8 +3,6 @@
 
 #include <map>
 #include <string>
-#include <utility>
-
 #include "Date.h"
 #include "Relation.h"
 
@@ -24,7 +22,7 @@ class Member
     private:
         std::string _name;
         Date _joiningDate;
-        std::list<std::pair<Membre*, Relation> > _relations;
+        std::map<Member*, Relation> _relations;
 };
 
 #endif
