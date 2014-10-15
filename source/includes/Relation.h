@@ -8,7 +8,7 @@ class Relation
 {
     public:
         enum RelationType {AMITIE, CONNAISSANCE, TRAVAIL, NB_REL};
-        Relation(RelationType type=CONNAISSANCE):_type(type){};
+        Relation(RelationType type=CONNAISSANCE):_type(type){ _startingDate = Date();};
         std::string getRelationType();
 
     private:
