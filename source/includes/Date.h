@@ -8,14 +8,13 @@ class Date
 {
     public:
         Date(); //creates a date with current calendar date
-        short getYear() {return _year;};
-        short getMonth() {return _month;};
-        short getDay() {return _day;};
-        friend std::ostream& operator<< (std::ostream&, const Date&);
-    
+        short getYear() const {return _year;} ;
+        short getMonth() const {return _month;} ;
+        short getDay() const {return _day;} ;
+        
     private:
         short _year, _month, _day;
-    
 };
+std::ostream& operator<<(std::ostream& os, const Date& date);
 
 #endif

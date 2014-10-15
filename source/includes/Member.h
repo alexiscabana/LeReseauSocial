@@ -15,8 +15,8 @@ class Member
             _joiningDate = Date();
         };
         
-        std::string getName(){return _name;};
-        Date getJoiningDate(){return _joiningDate;};
+        std::string getName() const {return _name;};
+        Date getJoiningDate() const {return _joiningDate;};
         void addRelation(Member* otherMember, Relation* rel);
     
     private:

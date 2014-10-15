@@ -9,8 +9,8 @@ Date::Date()
     _day = now->tm_mday;
 }
 
-Date::operator<<(std::ostream&, const Date&)
+//prints a date in format DD / MM / YYYY
+std::ostream& operator<<(std::ostream& os, const Date& date)
 {
-	
-	
+	return os<< date.getDay() <<" / "<<date.getMonth()<<" / "<<date.getYear();
 }
