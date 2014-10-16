@@ -1,7 +1,9 @@
 #ifndef COMMUNITY_H
 #define COMMUNITY_H
 
-#include Member.h
+#include "Member.h"
+#include "Date.h"
+#include <string>
 
 class Community : public Member
 {

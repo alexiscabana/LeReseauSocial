@@ -1,7 +1,9 @@
 #ifndef ENTERPRISE_H
 #define ENTERPRISE_H
 
-#include Member.h
+#include "Member.h"
+#include "Date.h"
+#include <string>
 
 class Enterprise : public Member
 {
